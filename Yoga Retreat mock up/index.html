@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Strength & Stillness Retreat | Chiang Mai 2026</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f4f1ec;
+    color: #333;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+}
+
+section {
+    padding: 80px 10%;
+}
+
+/* HERO */
+.hero {
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+                url('images/hero.png') center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 60px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 30px;
+    background-color: #8c7b6b;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #6f6256;
+}
+
+/* ABOUT GRID */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+/* FACILITATORS NEW LAYOUT */
+.facilitators {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    margin-top: 50px;
+}
+
+.facilitator-card {
+    width: 100%;
+    height: auto;
+    max-height: 420px;
+    object-fit: contain;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.facilitator-card:hover {
+    transform: translateY(-8px);
+}
+
+.facilitator-card img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.facilitator-card h3 {
+    margin-bottom: 15px;
+}
+
+/* PRICING */
+.pricing {
+    text-align: center;
+    background: #e8e1d8;
+    border-radius: 20px;
+    padding: 50px;
+}
+
+/* CONTACT */
+.contact form {
+    max-width: 500px;
+    margin: auto;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+footer {
+    background: #d8cec2;
+    text-align: center;
+    padding: 30px;
+    margin-top: 50px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .facilitators {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<section class="hero">
+    <div>
+        <h1>Strength & Stillness</h1>
+        <p>5-Day Yoga, Meditation & Conscious Muay Thai Retreat<br>Chiang Mai | June–July 2026</p>
+        <a href="#booking" class="btn">Reserve Your Spot</a>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section>
+    <h2>About The Retreat</h2>
+    <p>This 5-day immersive experience blends yoga, Vipassana-inspired meditation, conscious Muay Thai training, sound healing, Thai massage, and nature excursions.</p>
+
+    <div class="grid">
+        <div class="card">
+            <img src="images/yoga.png" alt="Yoga">
+            <div class="card-content">
+                <h3>Daily Yoga</h3>
+                <p>Vinyasa, Yin & Restorative sessions to balance strength and softness.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="images/boxing.png" alt="Muay Thai">
+            <div class="card-content">
+                <h3>Conscious Muay Thai</h3>
+                <p>Beginner-friendly empowerment training led by a former professional boxer.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="images/meditation.png" alt="Meditation">
+            <div class="card-content">
+                <h3>Vipassana Meditation</h3>
+                <p>Mindfulness practices for nervous system balance and clarity.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="images/resort.png" alt="Accommodation">
+            <div class="card-content">
+                <h3>Luxury Accommodation</h3>
+                <p>Mountain boutique resort with pool, spa & nourishing meals.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FACILITATORS UPDATED -->
+<section>
+    <h2 style="text-align:center;">Meet Your Facilitators</h2>
+
+    <div class="facilitators">
+
+        <div class="facilitator-card">
+            <img src="images/host.png" alt="Retreat Host">
+            <h3>Retreat Host</h3>
+            <p>
+                The retreat is led by an experienced wellness facilitator with a professional healthcare background and expertise in holistic practices, nervous system regulation, and embodied movement.
+            </p>
+        </div>
+
+        <div class="facilitator-card">
+            <img src="images/trainer.png" alt="Muay Thai Trainer">
+            <h3>Muay Thai Trainer</h3>
+            <p>
+                Thai-English former professional boxer bringing authentic Muay Thai experience. He now teaches structured, beginner-friendly sessions focused on empowerment, discipline, and conscious strength.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- PRICING -->
+<section id="booking">
+    <div class="pricing">
+        <h2>Investment</h2>
+        <h3>$1,950 Early Bird</h3>
+        <p>Deposit: $500 to secure your space</p>
+        <a href="https://buy.stripe.com/your-payment-link" class="btn">Pay Deposit</a>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact">
+    <h2>Contact Us</h2>
+
+    <form action="mailto:your@email.com" method="post" enctype="text/plain">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea rows="5" placeholder="Your Message"></textarea>
+        <input type="submit" value="Send Message" class="btn">
+    </form>
+
+    <br>
+    <p style="text-align:center;">
+        Or message directly:
+        <br><br>
+        <a href="https://wa.me/yourwhatsappnumber" class="btn">WhatsApp</a>
+    </p>
+</section>
+
+<footer>
+    © 2026 Strength & Stillness Retreat | Chiang Mai
+</footer>
+
+</body>
+</html>
